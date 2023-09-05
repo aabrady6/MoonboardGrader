@@ -50,4 +50,4 @@ The next step extracts the legal holds, starting hold(s), ending hold(s) and gra
 Navigate to the driver notebook file for the nueral network (TF/Conversion Driver.ipynb). The first step is to convert the raw data to useable tensors. This project creates a 3 dimensional tensor for each project, with the legal holds on one layer, the start hold(s) on the second and the finish hold(s) on the third layer. Next, these tensors will be used to create and train the model with the TensorFlow package. Once complete, we will be able to test the grade of a hypothetical problem.
 
 ### Testing a route's grade
-Enter into the 
+Enter into the TF Data/Test Problem.txt file. The file contains 
