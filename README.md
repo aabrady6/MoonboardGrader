@@ -9,7 +9,7 @@ One tool which removes some variability of the sport's factors is The Moonboard 
 This program can be used to mathematically calculate a route on the Moonboard Masters 2019 hold set. The challenge I faced with this project involves the redesign of the Moonboard website, now focussing on an app-first approach. The limited data that is provided on the Moonboard website affects the training data size and causes some inaccuracies in unrealistic problems.
 
 ## Key Topics
-*  Prerequisites
+* Prerequisites
   * Python3 packages
   * TensorFlow
 * Using the Project  
