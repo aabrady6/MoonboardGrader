@@ -11,8 +11,8 @@ This program can be used to mathematically calculate a route on the Moonboard Ma
 ## Key Topics
 * [Prerequisites](#Prerequisites)
   * [Python3 packages](#python3-packages)
-  * TensorFlow
-* Using the Project  
+  * Firefox (version 
+* [Using the Project](#using-the-project)  
   *  Obtaining data to train the nueral network
   *  Create and train the nueral network
   *  Testing a route's grade
@@ -20,9 +20,21 @@ This program can be used to mathematically calculate a route on the Moonboard Ma
 
 ## Prerequisites
 ### Python3 Packages
-The required packages are:
-a. os
-b. time
-c. selenium
-d. numpy
-e. tesnorflow
+Python3 and Jupyter notebooks are required to run this project. The required packages are:
+* selenium
+* numpy
+* tensorflow
+
+To install these packages, use the following commands:
+
+```
+pip install -U selenium
+pip install numpy
+pip install tensorflow==2.13.*
+```
+
+if package installations experience issues, reffer to that package's web documentation.
+
+## Using the Project
+### Obtaining data to train the nueral network
+To begin, the raw data will need to be extracted from the Moonboard webpage. Create an account on the Moonboard website and enter the username and password into the Web Scraper/user_info.txt file. Next, enter into the Web Scraper/scraper_driver.ipynb file and run all blocks. This will use the Selenium package to open a 
