@@ -14,8 +14,8 @@ This program can be used to mathematically calculate a route on the Moonboard Ma
   * [Firefox](#firefox)
 * [Using the Project](#using-the-project)  
   *  [Obtaining data to train the nueral network](#obtaining-data-to-train-the-nueral-network)
-  *  Create and train the nueral network
-  *  Testing a route's grade
+  *  [Create and train the nueral network](#create-and-train-the-nueral-network)
+  *  [Testing a route's grade](#testing-a-route's-grade)
 
 
 ## Prerequisites
@@ -47,4 +47,7 @@ To begin, the raw data will need to be extracted from the Moonboard webpage. Cre
 The next step extracts the legal holds, starting hold(s), ending hold(s) and grade for each of the routes. This step visits each of the scraped URLs and takes approximtely 1-2 seconds per page, so takes estimated 10 mins to complete. Future opportunity to look into asyncronously request the data to significantly speed up this step. Once complete, the raw data will then be housed in the Raw Data folder.
 
 ### Create and train the Nueral Network
+Navigate to the driver notebook file for the nueral network (TF/Conversion Driver.ipynb). The first step is to convert the raw data to useable tensors. This project creates a 3 dimensional tensor for each project, with the legal holds on one layer, the start hold(s) on the second and the finish hold(s) on the third layer. Next, these tensors will be used to create and train the model with the TensorFlow package. Once complete, we will be able to test the grade of a hypothetical problem.
 
+### Testing a route's grade
+Enter into the 
