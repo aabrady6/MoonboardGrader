@@ -16,6 +16,7 @@ This program can be used to mathematically calculate a route on the Moonboard Ma
   *  [Obtaining data to train the nueral network](#obtaining-data-to-train-the-nueral-network)
   *  [Create and train the nueral network](#create-and-train-the-nueral-network)
   *  [Testing a route's grade](#testing-a-route's-grade)
+* [Future Improvements](#future-improvements) 
 
 
 ## Prerequisites
@@ -50,4 +51,9 @@ The next step extracts the legal holds, starting hold(s), ending hold(s) and gra
 Navigate to the driver notebook file for the nueral network (TF/Conversion Driver.ipynb). The first step is to convert the raw data to useable tensors. This project creates a 3 dimensional tensor for each project, with the legal holds on one layer, the start hold(s) on the second and the finish hold(s) on the third layer. Next, these tensors will be used to create and train the model with the TensorFlow package. Once complete, we will be able to test the grade of a hypothetical problem.
 
 ### Testing a route's grade
-Enter into the TF Data/Test Problem.txt file. The file contains 
+Enter into the TF Data/Test Problem.txt file. The file contains an 11x18 matrix. Tho set a route, change the starting hold(s) from 0 -> S. Change legal holds from 0 -> 1. Change the finish holds from 0 -> F. Once saved, run the final block in the TF/Conversion Driver.ipynb. The resulted calculated grade will be printed.
+
+## Future Improvements
+The following are future improvements for this project:
+* using async to scrape hold position data quicker
+* create a UI for inputting test routes
