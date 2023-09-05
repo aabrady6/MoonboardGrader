@@ -10,10 +10,15 @@ This program can be used to mathematically calculate a route on the Moonboard Ma
 
 ## Key Topics
 *  Prerequisites
-  * Python3 Packages
+  * Python3 packages
   * TensorFlow
 * Using the Project  
   *  Obtaining data to train the nueral network
   *  Create and train the nueral network
   *  Testing a route's grade
-*  
+
+
+## Prerequisites
+
+### Python3 Packages
+The
